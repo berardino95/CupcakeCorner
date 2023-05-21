@@ -31,7 +31,7 @@ struct CheckoutView: View {
                     .font(.title)
                 Button("Place Order"){
                     Task{
-                        await placeOrde()
+                        await placeOrder()
                     }
                 }
                     .padding()
@@ -46,7 +46,7 @@ struct CheckoutView: View {
         }
     }
     
-    func placeOrde() async {
+    func placeOrder() async {
         //Try encode the data
         guard let encoded = try? JSONEncoder().encode(order.data) else {
             print("Failed to encode order")
