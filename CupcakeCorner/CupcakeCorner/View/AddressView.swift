@@ -12,12 +12,47 @@ struct AddressView: View {
     @ObservedObject var order: Order
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form{
+            Section{
+                TextField("Name", text: $order.name)
+                TextField("Street address", text: $order.streetAdress)
+                TextField("City", text: $order.city)
+                TextField("Zip Code", text: $order.zip)
+                    .keyboardType(.numberPad)
+            }
+            .autocorrectionDisabled(true)
+            .textInputAutocapitalization(.words)
+            
+            Section{
+                NavigationLink {
+                    CheckoutView(order: order)
+                } label: {
+                    Text("Check out")
+                }
+            }
+            .disabled(order.isValidAddress == false)
+        }
+        .navigationTitle("Delivery details")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar{
+            ToolbarItem (placement: .keyboard){
+                Button("Clear address") {
+                    order.name = ""
+                    order.streetAdress = ""
+                    order.city = ""
+                    order.zip = ""
+                }
+            }
+        }
     }
 }
 
 struct AddressView_Previews: PreviewProvider {
     static var previews: some View {
-        AddressView(order: Order())
+        //Putting the View in the NavigationView to see the Navigation Title Bar
+        NavigationView {
+            AddressView(order: Order())
+        }
+        
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FB22A812A18E98E001F69C9 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB22A802A18E98E001F69C9 /* CheckoutView.swift */; };
+		5FB22A832A1AA428001F69C9 /* String-EmptyChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB22A822A1AA428001F69C9 /* String-EmptyChecking.swift */; };
 		5FEB5B512A1769C200E8082D /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB5B502A1769C200E8082D /* CupcakeCornerApp.swift */; };
 		5FEB5B532A1769C200E8082D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB5B522A1769C200E8082D /* ContentView.swift */; };
 		5FEB5B552A1769C300E8082D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB5B542A1769C300E8082D /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FB22A802A18E98E001F69C9 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		5FB22A822A1AA428001F69C9 /* String-EmptyChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String-EmptyChecking.swift"; path = "CupcakeCorner/Model/String-EmptyChecking.swift"; sourceTree = SOURCE_ROOT; };
 		5FEB5B4D2A1769C200E8082D /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEB5B502A1769C200E8082D /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		5FEB5B522A1769C200E8082D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 			children = (
 				5FEB5B522A1769C200E8082D /* ContentView.swift */,
 				5FEB5B622A17709C00E8082D /* AddressView.swift */,
+				5FB22A822A1AA428001F69C9 /* String-EmptyChecking.swift */,
+				5FB22A802A18E98E001F69C9 /* CheckoutView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,7 +167,9 @@
 			files = (
 				5FEB5B612A176A6600E8082D /* Order.swift in Sources */,
 				5FEB5B632A17709C00E8082D /* AddressView.swift in Sources */,
+				5FB22A812A18E98E001F69C9 /* CheckoutView.swift in Sources */,
 				5FEB5B532A1769C200E8082D /* ContentView.swift in Sources */,
+				5FB22A832A1AA428001F69C9 /* String-EmptyChecking.swift in Sources */,
 				5FEB5B512A1769C200E8082D /* CupcakeCornerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
