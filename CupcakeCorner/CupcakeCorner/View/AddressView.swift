@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddressView: View {
     
-    @ObservedObject var order: Order
+    @ObservedObject var order: SharedOrder
     
     var body: some View {
         Form{
@@ -51,7 +51,7 @@ struct AddressView_Previews: PreviewProvider {
     static var previews: some View {
         //Putting the View in the NavigationView to see the Navigation Title Bar
         NavigationView {
-            AddressView(order: Order())
+            AddressView(order: SharedOrder())
         }
         
     }
